@@ -13,6 +13,8 @@ const AuthJwt = require('../middlewares/authJwt');
 
 router.get('/', index);
 router.post('/api/v1/register', register);
+router.post('/api/v1/dsad', register);
+router.post('/api/v1/dđ', register);
 router.post('/api/v1/login', login);
 router.put('/api/v1/update', [AuthJwt.checkLogin], updateAccout);
 router.get('/api/v1/token', [AuthJwt.checkLogin], token);
